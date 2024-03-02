@@ -21,7 +21,7 @@ scoreboard = ScoreBoard()
 screen.listen()
 screen.onkey(snake.up, "w")
 screen.onkey(snake.down, "s")
-screen.onkey(snake.left, "a")
+screen.onkey(snake.left, "a")                        
 screen.onkey(snake.right, "d")
 
 
@@ -40,14 +40,18 @@ while game_is_on:
         
     #Wall Colission
     if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
-        game_is_on = False
-        scoreboard.game_over()
+        scoreboard.reset()
+        snake.reset()
+        # game_is_on = False
+        # scoreboard.game_over()
 
     #Detect colission with self
     for segment in snake.segments[1:]:
         if snake.head.distance(segment) < 10:
-            game_is_on = False
-            scoreboard.game_over()
+            scoreboard.reset()
+            snake.reset()
+            # game_is_on = False
+            # scoreboard.game_over()
 
 
 

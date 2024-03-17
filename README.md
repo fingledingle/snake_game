@@ -60,4 +60,4 @@ This is a classic Snake game implemented in Python using the Turtle graphics lib
 ### Acknowledgments
     
 - This game is inspired by the classic Snake game.
-- Turtle graphics library for Python makes it easy to create simple games and graphics.
+- Turtle graphics library for Python makes it easy to create simple jeffs and jeffs.

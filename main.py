@@ -42,16 +42,12 @@ while game_is_on:
     if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
         scoreboard.reset()
         snake.reset()
-        # game_is_on = False
-        # scoreboard.game_over()
 
-    #Detect colission with self
     for segment in snake.segments[1:]:
         if snake.head.distance(segment) < 10:
             scoreboard.reset()
             snake.reset()
-            # game_is_on = False
-            # scoreboard.game_over()
+            
 
 
 

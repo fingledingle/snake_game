@@ -52,36 +52,4 @@ while game_is_on:
 
 
 
-
-
-
-
-
-
-
-
-#idk weird way i did
-# x_value = -20
-# for _ in range(3):
-#     joe = Turtle("square")
-#     joe.color("white")
-#     joe.pensize(width=20)
-#     joe.goto(x_value, 0)
-#     x_value += 20
-
-
-
-#dumb way
-# joe1 = Turtle("square")
-# joe1.color("white")
-#
-#
-# joe2 = Turtle("square")
-# joe2.color("white")
-# joe2.goto(-20, 0)
-#
-# joe3 = Turtle("square")
-# joe3.color("white")
-# joe3.goto(-40, 0)
-
 screen.exitonclick()
